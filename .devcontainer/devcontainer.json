@@ -3,17 +3,22 @@
 {
 	"name": "Python 3 & PostgreSQL",
 	"dockerComposeFile": "docker-compose.yml",
-	"service": "app",
+	"service": "django",
 	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
-	"features": {
-		"ghcr.io/r3dpoint/devcontainer-features/tailwindcss-standalone-cli:1": {
-			"version": "latest"
-		}
-	},
+	// "features": {
+	// 	"ghcr.io/r3dpoint/devcontainer-features/tailwindcss-standalone-cli:1": {
+	// 		"version": "latest"
+	// 	}
+	// },
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"charliermarsh.ruff"
+				// python
+				"ms-python.python",
+				"ms-python.vscode-pylance",
+				"charliermarsh.ruff",
+				// jupyter
+				"ms-toolsai.jupyter"
 			]
 		}
 	}
